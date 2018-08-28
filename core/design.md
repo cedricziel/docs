@@ -33,11 +33,11 @@ For [Rapid Application Development](https://en.wikipedia.org/wiki/Rapid_applicat
 ORM's data provider and persister implementations shipped with API Platform.
 
 In this case, the public (`@ApiResource`) and internal (Doctrine entity) data model are shared. Then, API Platform will
-be able to query, filter, paginate and persist automatically data.
-This is approach is super-convenient and efficient, but is probably **not a good idea** for non-[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+be able to query, filter, paginate and persist the data automatically.
+This approach is super-convenient and efficient, but is probably **not a good idea** for non-[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) applications
 and/or large systems.
-Again, it's up to the developers to use, or to not use those built-in data providers/persisters depending of the business
-they are dealing with. API Platform makes it easy to create custom data providers and persisters, and to implement appropriate
+Again, it's up to the developers to use, or not to use the built-in data providers/persisters depending on the requirements and business logic
+they are dealing with. API Platform makes it easy to create custom data providers, persisters and to implement appropriate
 patterns such as [CQS](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) or [CQRS](https://martinfowler.com/bliki/CQRS.html).
 
 Last but not least, to create [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)-based systems, a convenient
